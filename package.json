@@ -1,0 +1,10 @@
+{
+  "name": "@gotham/gotham-science",
+  "version": "1.0.3",
+  "main": "index.js",
+  "license": "MIT",
+  "gitHead": "5b35222c0fbd87b10a5a7bccecf16d2e94f05e43",
+  "devDependencies": {
+    "lerna": "^3.3.0"
+  }
+}

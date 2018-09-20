@@ -1,0 +1,11 @@
+{
+  "name": "@gotham/phoenix-science-header",
+  "version": "1.0.3",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "@babel/core": "7.1.0",
+    "gotham-logo": "1.0.0"
+  },
+  "gitHead": "5b35222c0fbd87b10a5a7bccecf16d2e94f05e43"
+}
