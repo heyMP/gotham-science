@@ -1,11 +1,11 @@
 {
   "name": "@gotham/gotham-science-header",
   "version": "0.0.1",
-  "main": "index.js",
+  "main": "gotham-science-header.js",
   "license": "MIT",
   "dependencies": {
     "@babel/core": "7.1.0",
-    "gotham-logo": "1.0.0"
+    "@gotham/gotham-logo": "^0.0.3"
   },
   "gitHead": "5b35222c0fbd87b10a5a7bccecf16d2e94f05e43",
   "publishConfig": {
