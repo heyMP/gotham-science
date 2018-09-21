@@ -1,6 +1,6 @@
 {
   "name": "@gotham/gotham-science-header",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "main": "gotham-science-header.js",
   "license": "MIT",
   "dependencies": {
