@@ -2,8 +2,8 @@
  * Copyright 2019 Gotham University
  * @license Apache-2.0, see License.md for full text.
  */
-import { LitElement, html } from '@polymer/lit-element';
-import from "@gotham/gotham-logo"
+import { LitElement, html } from "@polymer/lit-element";
+import "@gotham/gotham-logo/gotham-logo.js";
 
 /**
  * `gotham-science-header`
@@ -31,14 +31,12 @@ class GothamScienceHeader extends LitElement {
   // life cycle
   constructor() {
     super();
-
   }
   /**
    * life cycle, element is afixed to the DOM
    */
   connectedCallback() {
     super.connectedCallback();
-
   }
   // static get observedAttributes() {
   //   return [];
@@ -46,7 +44,6 @@ class GothamScienceHeader extends LitElement {
   // disconnectedCallback() {}
 
   // attributeChangedCallback(attr, oldValue, newValue) {}
-
 }
 customElements.define("gotham-science-header", GothamScienceHeader);
 export { GothamScienceHeader };

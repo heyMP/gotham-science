@@ -5,3 +5,20 @@
 :host([hidden]) {
   display: none;
 }
+
+.header {
+  display: flex;
+  width: auto;
+  justify-content: center;
+  background: purple;
+  padding: 1em;
+  color: white;
+}
+
+.logo {
+  font-size: 1.8em;
+}
+
+.left-section {
+  flex: 1 1 auto;
+}

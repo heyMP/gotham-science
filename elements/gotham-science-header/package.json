@@ -35,7 +35,7 @@
   },
   "license": "Apache-2.0",
   "dependencies": {
-    "@gotham/gotham-logo", "^0.0.5",
+    "@gotham/gotham-logo": "^0.0.6",
     "@polymer/lit-element":"^0.7.0"
   },
   "devDependencies": {
