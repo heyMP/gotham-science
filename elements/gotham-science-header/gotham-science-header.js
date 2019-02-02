@@ -18,62 +18,61 @@ import "@gotham/gotham-logo/gotham-logo.js";
  * @demo demo/index.html
  */
 class GothamScienceHeader extends LitElement {
+  
   // render function
   render() {
     return html`
-      <style>
-        :host {
-          display: block;
-        }
+<style>:host {
+  display: block;
+}
 
-        :host([hidden]) {
-          display: none;
-        }
+:host([hidden]) {
+  display: none;
+}
 
-        .header {
-          display: flex;
-          width: auto;
-          justify-content: center;
-          background: purple;
-          padding: 1em;
-          color: white;
-        }
+.header {
+  display: flex;
+  width: auto;
+  justify-content: center;
+  background: purple;
+  padding: 1em;
+  color: burlywood;
+}
 
-        .logo {
-          font-size: 1.8em;
-        }
+.logo {
+  font-size: 1.8em;
+}
 
-        .left-section {
-          flex: 1 1 auto;
-        }
-      </style>
-      <div class="header">
-        <div class="left-section">
-          <div class="logo">
-            <gotham-logo></gotham-logo>
-          </div>
-          <div class="subtitle">
-            ${this.subtitle}
-          </div>
-        </div>
-        <div class="right-section">
-          <slot></slot>
-        </div>
-      </div>
-    `;
+.left-section {
+  flex: 1 1 auto;
+}</style>
+<div class="header">
+  <div class="left-section">
+    <div class="logo">
+      <gotham-logo></gotham-logo>
+    </div>
+    <div class="subtitle">
+      ${this.subtitle}
+    </div>
+  </div>
+  <div class="right-section">
+    <slot></slot>
+  </div>
+</div>`;
   }
 
   // properties available to the custom element for data binding
   static get properties() {
     return {
-      subtitle: {
-        name: "subtitle",
-        type: "String",
-        value: "",
-        reflectToAttribute: false,
-        observer: false
-      }
-    };
+  "subtitle": {
+    "name": "subtitle",
+    "type": "String",
+    "value": "",
+    "reflectToAttribute": false,
+    "observer": false
+  }
+}
+;
   }
 
   /**
