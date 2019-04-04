@@ -2,7 +2,7 @@
  * Copyright 2019 Gotham University
  * @license Apache-2.0, see License.md for full text.
  */
-import { LitElement, html } from "@polymer/lit-element";
+import { LitElement, html } from "lit-element";
 import "@gotham/gotham-logo/gotham-logo.js";
 
 /**
@@ -18,61 +18,82 @@ import "@gotham/gotham-logo/gotham-logo.js";
  * @demo demo/index.html
  */
 class GothamScienceHeader extends LitElement {
-  
   // render function
   render() {
     return html`
-<style>:host {
-  display: block;
-}
+      <style>
+        :host {
+          display: block;
+        }
 
-:host([hidden]) {
-  display: none;
-}
+        :host([hidden]) {
+          display: none;
+        }
 
-.header {
-  display: flex;
-  width: auto;
-  justify-content: center;
-  background: purple;
-  padding: 1em;
-  color: burlywood;
-}
+        .header {
+          display: flex;
+          width: auto;
+          justify-content: center;
+          background: purple;
+          padding: 1em;
+          color: burlywood;
+          align-items: center;
+        }
 
-.logo {
-  font-size: 1.8em;
-}
+        .logo {
+          font-size: 1.8em;
+        }
 
-.left-section {
-  flex: 1 1 auto;
-}</style>
-<div class="header">
-  <div class="left-section">
-    <div class="logo">
-      <gotham-logo></gotham-logo>
-    </div>
-    <div class="subtitle">
-      ${this.subtitle}
-    </div>
-  </div>
-  <div class="right-section">
-    <slot></slot>
-  </div>
-</div>`;
+        gotham-logo {
+          --gotham-logo-height: 80px;
+          display: inline-block;
+        }
+
+        .left-section {
+          flex: 1 1 auto;
+          display: flex;
+          align-items: center;
+        }
+
+        .title {
+          font-size: 40px;
+          color: white;
+        }
+
+        .subtitle {
+          font-size: 25px;
+        }
+      </style>
+      <div class="header">
+        <div class="left-section">
+          <div class="logo">
+            <gotham-logo></gotham-logo>
+          </div>
+          <div class="names">
+            <div class="title">Gotham University</div>
+            <div class="subtitle">
+              ${this.subtitle}
+            </div>
+          </div>
+        </div>
+        <div class="right-section">
+          <slot></slot>
+        </div>
+      </div>
+    `;
   }
 
   // properties available to the custom element for data binding
   static get properties() {
     return {
-  "subtitle": {
-    "name": "subtitle",
-    "type": "String",
-    "value": "",
-    "reflectToAttribute": false,
-    "observer": false
-  }
-}
-;
+      subtitle: {
+        name: "subtitle",
+        type: "String",
+        value: "",
+        reflectToAttribute: false,
+        observer: false
+      }
+    };
   }
 
   /**

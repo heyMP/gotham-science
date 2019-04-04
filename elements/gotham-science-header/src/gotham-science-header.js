@@ -2,7 +2,7 @@
  * Copyright 2019 Gotham University
  * @license Apache-2.0, see License.md for full text.
  */
-import { LitElement, html } from "@polymer/lit-element";
+import { LitElement, html } from "lit-element";
 import "@gotham/gotham-logo/gotham-logo.js";
 
 /**

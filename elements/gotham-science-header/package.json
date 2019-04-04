@@ -40,8 +40,9 @@
   },
   "license": "Apache-2.0",
   "dependencies": {
-    "@gotham/gotham-logo": "^0.0.6",
-    "@polymer/lit-element": "^0.7.0"
+    "@gotham/gotham-logo": "^0.1.1",
+    "@lrnwebcomponents/hax-body-behaviors": "latest",
+    "lit-element": "2.0.1"
   },
   "devDependencies": {
     "@lrnwebcomponents/deduping-fix": "0.2.0",

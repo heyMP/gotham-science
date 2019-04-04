@@ -13,12 +13,29 @@
   background: purple;
   padding: 1em;
   color: burlywood;
+  align-items: center;
 }
 
 .logo {
   font-size: 1.8em;
 }
 
+gotham-logo {
+  --gotham-logo-height: 80px;
+  display: inline-block;
+}
+
 .left-section {
   flex: 1 1 auto;
+  display: flex;
+  align-items: center;
+}
+
+.title {
+  font-size: 40px;
+  color: white;
+}
+
+.subtitle {
+  font-size: 25px;
 }
