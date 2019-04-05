@@ -47,6 +47,7 @@ class GothamScienceHeader extends LitElement {
         gotham-logo {
           --gotham-logo-height: 80px;
           display: inline-block;
+          margin-right: 0.5em;
         }
 
         .left-section {

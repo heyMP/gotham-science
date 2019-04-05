@@ -23,6 +23,7 @@
 gotham-logo {
   --gotham-logo-height: 80px;
   display: inline-block;
+  margin-right: .5em;
 }
 
 .left-section {
